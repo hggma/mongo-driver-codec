@@ -1,4 +1,4 @@
-module hggma/mongo-driver-plus
+module hggma/mongo-driver-codec
 
 go 1.17
 
