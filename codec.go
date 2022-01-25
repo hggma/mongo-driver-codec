@@ -43,7 +43,7 @@ func (t Time) DecodeValue(dc bsoncodec.DecodeContext, vr bsonrw.ValueReader, val
 // Decimal
 // Usage:
 // 		mongo.Connect(context.Background(),
-//					options.Client().ApplyURI(conf.Mongodb.Uri).SetRegistry(bson.NewRegistryBuilder().
+//					options.Client().ApplyURI("mongodb://127.0.0.1:27017").SetRegistry(bson.NewRegistryBuilder().
 //					RegisterTypeDecoder(reflect.TypeOf(decimal.Decimal{}), Decimal{}).
 //					RegisterTypeEncoder(reflect.TypeOf(decimal.Decimal{}), Decimal{}).
 //					Build()))
